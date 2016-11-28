@@ -1,0 +1,12 @@
+library(plotly)
+library(dplyr)
+
+import plotly.plotly as py
+import plotly.graph_objs as go
+
+data = [go.Bar(
+            x=['China', 'India', 'United States', 'Pakistan', 'Uzbekistan', 'Australia', 'Turkey'],
+            y=[4790, 5748, 2809, 1524, 827, 566, 577]
+    )]
+
+py.iplot(data, filename='Cotton Production (1,000 Metric Tons)')
